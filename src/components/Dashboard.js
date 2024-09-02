@@ -4,7 +4,7 @@ import './styles/Dashboard.css';
 
 function Dashboard() {
   return (
-    <>
+    <div>
     <div className="dashboard-container">
       <h1 className="dashboard-title">School Management System</h1>
        <img src="https://tse4.mm.bing.net/th?id=OIP.wdkiB1wHUA0o58Y0VM1RPAHaDm&pid=Api&P=0&h=180" />
@@ -14,7 +14,7 @@ function Dashboard() {
         </div>
        </div>
         <img className='img-2' src="https://m.media-amazon.com/images/I/81m90ZqaYvL.jpg"/>
-       </>
+       </div>
   );
 }
 
