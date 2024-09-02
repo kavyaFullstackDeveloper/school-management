@@ -25,9 +25,12 @@ app.use('/api/teachers', teacherRoutes);
 
 const PORT = config.port || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 app.get('/', (req, res) => {
-  res.send('Hello, World!'); // or serve an HTML file
+  res.send('Welcome to the School Management System API!');
 });
+
+
 app.use(express.static('public'));
 app.get('/', (req, res) => {
   res.redirect('/api');
