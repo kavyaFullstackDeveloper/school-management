@@ -25,3 +25,13 @@ app.use('/api/teachers', teacherRoutes);
 
 const PORT = config.port || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.get('/', (req, res) => {
+  res.send('Hello, World!'); // or serve an HTML file
+});
+app.use(express.static('public'));
+app.get('/', (req, res) => {
+  res.redirect('/api');
+});
+app.use((req, res, next) => {
+  res.status(404).send('Sorry, that route doesn’t exist.');
+});
