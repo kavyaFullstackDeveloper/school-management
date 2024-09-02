@@ -13,7 +13,7 @@ function AddStudent() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/students/add-student', {
+      const response = await axios.post(' https://school-management-tat3.onrender.com/api/students/add-student', {
         name,
         surname,
         email,

@@ -14,7 +14,7 @@ function EditStudent() {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/students/:${id}/update-student`);
+        const response = await axios.get(` https://school-management-tat3.onrender.com/api/students/:${id}/update-student`);
         const student = response.data;
         setName(student.name);
         setSurname(student.surname);

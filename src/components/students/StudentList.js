@@ -8,7 +8,7 @@ function StudentList() {
 
   useEffect(() => {
     const fetchStudents = async () => {
-      const response = await axios.get('http://localhost:5000/api/students/get-students');
+      const response = await axios.get(' https://school-management-tat3.onrender.com/api/students/get-students');
       setStudents(response.data);
     };
     fetchStudents();

@@ -10,7 +10,7 @@ function TeacherList() {
   useEffect(() => {
     const fetchTeachers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/teachers/get-teachers');
+        const response = await axios.get(' https://school-management-tat3.onrender.com/api/teachers/get-teachers');
         setTeachers(response.data.data); // assuming response.data.data contains the teachers array
       } catch (error) {
         console.error('Error fetching teachers:', error);

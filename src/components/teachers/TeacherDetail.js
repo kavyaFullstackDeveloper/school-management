@@ -10,7 +10,7 @@ function TeacherDetails() {
   useEffect(() => {
     const fetchTeacher = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/teachers/${id}`);
+        const response = await axios.get(` https://school-management-tat3.onrender.com/api/teachers/${id}`);
         setTeacher(response.data);
       } catch (error) {
         console.error('Error fetching teacher details:', error);
